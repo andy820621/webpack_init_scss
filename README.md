@@ -1,4 +1,4 @@
-# Webpack Init Package (scss version)
+# Webpack Initial Package (scss version)
 
 ### Install
 
