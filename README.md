@@ -2,14 +2,12 @@
 
 ### Install
 
-download or clone first.
-
-recommend use clone:
+Download or Clone first. Recommend to use clone:
 ```shell
 git clone https://github.com/andy820621/webpack_init_scss.git
 ```
 
-then install:
+And then install:
 ```shell
 npm install
 ```
@@ -20,7 +18,7 @@ npm install
 npm run build
 ```
 
-### Serve
+### Server
 
 ```shell
 npm run serve
