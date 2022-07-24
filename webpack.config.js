@@ -35,7 +35,7 @@ module.exports = {
 				use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+				test: /\.(png|svg|jp?g|gif|webp)$/i,
 				type: "asset/resource",
 			},
 			// If you want compatibility with older browsers, please uncomment below.
