@@ -1,0 +1,32 @@
+$primaryColor: #30647851;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-image: url(./images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	div {
+		display: grid;
+		place-items: center;
+		h1 {
+			background-color: $primaryColor;
+			color: #eee;
+			padding: 1rem 2rem;
+			margin-block: 2.4rem;
+		}
+		img {
+			width: 24%;
+			aspect-ratio: 1;
+			background-color: #eee;
+			border-radius: 50%;
+		}
+	}
+}
