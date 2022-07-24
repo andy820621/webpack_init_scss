@@ -1,4 +1,5 @@
-$primaryColor: #30647851;
+$primaryColor: #3064783d;
+$textColor: #9dd5d7;
 
 *,
 *::before,
@@ -8,24 +9,26 @@ $primaryColor: #30647851;
 }
 
 body {
-	background-image: url(./images/background.jpg);
+	font-family: "Arial", sans-serif;
+	background-image: url(../images/background.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
 	div {
+		width: 81%;
+		margin-top: 8rem;
+		margin-inline: auto;
 		display: grid;
 		place-items: center;
 		h1 {
-			background-color: $primaryColor;
-			color: #eee;
-			padding: 1rem 2rem;
-			margin-block: 2.4rem;
+			color: $textColor;
+			padding-block: 2.4rem;
 		}
 		img {
 			width: 24%;
 			aspect-ratio: 1;
-			background-color: #eee;
+			background-color: $primaryColor;
 			border-radius: 50%;
 		}
 	}

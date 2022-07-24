@@ -10,6 +10,7 @@ module.exports = {
 		path: path.resolve(__dirname, "dist"),
 		filename: "js/[name]_[hash].js",
 		assetModuleFilename: "images/[name][ext]",
+		clean: true,
 	},
 	devtool: "source-map",
 	plugins: [
@@ -33,6 +34,21 @@ module.exports = {
 				test: /\.s[ac]ss$/i,
 				use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
 			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+				type: "asset/resource",
+			},
+			// If you want compatibility with older browsers, please uncomment below.
+			// {
+			// 	test: /\.m?js$/,
+			// 	exclude: /(node_modules|bower_components)/,
+			// 	use: {
+			// 		loader: "babel-loader",
+			// 		options: {
+			// 			presets: ["@babel/preset-env"],
+			// 		},
+			// 	},
+			// },
 		],
 	},
 	devServer: {
