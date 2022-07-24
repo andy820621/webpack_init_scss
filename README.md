@@ -1,4 +1,4 @@
-# webpack_init_scss
+# Webpack_init_scss
 
 ### Install
 
